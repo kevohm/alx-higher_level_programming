@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-def uppercase(str):
-    i = len(str)
+def uppercase(Str):
+    i = len(Str)
     j = 0
+    output = ""
     while(i > j):
-        c = ord(str[j])
+        c = ord(Str[j])
         if c in range(97, 123):
             c -= 23
-            str[j] = chr(c)
+        output += chr(c)
     j += 1
-    print("{}".format(str))
+    print("{}".format(output))
