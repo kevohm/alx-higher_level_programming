@@ -5,6 +5,7 @@ for i in range(1, 90):
     m += (10 * q)
     for j in range(1, 10):
         j += (10 * j)
+        print(j)
         if (i == j):
             pass
     if (m >= i):
