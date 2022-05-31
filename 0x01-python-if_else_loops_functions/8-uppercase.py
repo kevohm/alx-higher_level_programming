@@ -8,3 +8,4 @@ def uppercase(str):
             c -= 23
             str[j] = chr(c)
     j++
+    print("{}".format(str))
