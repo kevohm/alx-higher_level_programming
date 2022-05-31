@@ -7,6 +7,7 @@ def uppercase(Str):
         c = ord(Str[j])
         if c in range(97, 123):
             c -= 23
-        output += chr(c)
+        output += str(chr(c))
     j += 1
+    print("done")
     print("{}".format(output))
