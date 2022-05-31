@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for i in range(1, 90):
+for i in range(1, 89):
     check = True
     q = i % 10
     m = i / 10
@@ -9,4 +9,7 @@ for i in range(1, 90):
         if (i == j):
             check = False
     if (m >= i and check):
+        if (i < 10):
+            i = "0" + str(i)
         print("{}".format(i), end=", ")
+print("89")
