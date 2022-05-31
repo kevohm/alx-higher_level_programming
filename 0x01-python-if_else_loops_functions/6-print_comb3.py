@@ -6,6 +6,6 @@ for i in range(1, 90):
     for j in range(1, 10):
         j += (10 * j)
         if (i == j):
-            continue
+            pass
     if (m >= i):
         print("{}".format(i), end=", ")
