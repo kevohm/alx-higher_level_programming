@@ -8,6 +8,7 @@ def uppercase(Str):
         if c in range(97, 123):
             c -= 23
         output += str(chr(c))
+        print("{}".format(output))
     j += 1
     print("done")
     print("{}".format(output))
