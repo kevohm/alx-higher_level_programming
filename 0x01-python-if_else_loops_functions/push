@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Enter msg "
+read msg
+git add .
+git commit "$msg"
+git push
