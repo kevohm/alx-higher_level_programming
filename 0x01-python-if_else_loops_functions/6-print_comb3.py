@@ -4,7 +4,7 @@ for i in range(1, 90):
     m = i / 10
     m += (10 * q)
     for j in range(1, 10):
-        j += (10 * j);
+        j += (10 * j)
         if (i == j):
             continue
     if (m >= i):
