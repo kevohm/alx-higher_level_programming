@@ -5,10 +5,10 @@ def fizzbuzz():
         w = i % 3
         s = i % 5
         if(w == 0 and s == 0):
-            print("FizzBuzz",end=" ")
+            print("FizzBuzz", end=" ")
         elif(s == 0):
-            print("Buzz",end=" ")
+            print("Buzz", end=" ")
         elif(w == 0):
-            print("Fizz",end=" ")
+            print("Fizz", end=" ")
         else:
-            print("{}".format(i),end=" ")
+            print("{}".format(i), end=" ")
