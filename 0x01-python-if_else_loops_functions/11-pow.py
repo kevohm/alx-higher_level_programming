@@ -9,6 +9,6 @@ def pow(a, b):
     if(b == 0):
         return(1)
     b -= 1
-    '''if(check):
-        return round((a * pow(a, b)), 2)'''
+    if(check):
+        return round((a * pow(a, b)), 10)
     return (a * pow(a, b))
