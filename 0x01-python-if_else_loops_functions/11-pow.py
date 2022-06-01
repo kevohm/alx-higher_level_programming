@@ -3,8 +3,8 @@
 def pow(a, b):
     if(b < 0):
         b = abs(b)
-        a = float(1 / a)
+        a = 1 / a
     if(b == 0):
         return(1)
     b -= 1
-    return (a *  pow(a, b))
+    return round((a *  pow(a, b)), 2)
