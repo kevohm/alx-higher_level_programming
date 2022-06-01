@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def fizzbuzz():
-    for i in range(1, 101)
+    for i in range(1, 101):
         w = i % 3
         s = i % 5
         if(w == 0):
