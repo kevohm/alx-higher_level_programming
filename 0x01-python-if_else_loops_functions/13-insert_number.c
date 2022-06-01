@@ -24,13 +24,12 @@ listint_t *insert_node(listint_t **head, int number)
 	}
 	if(prev == NULL)
 	{
-		newNode->next = *head;
 		*head = newNode;
 	}
 	else
 	{
-		newNode->next = current;
 		prev->next = newNode;
 	}
+	newNode->next = current;
 	return newNode;
 }
