@@ -2,6 +2,7 @@
 
 def print_last_digit(number):
     if(type(number) != int or float):
-        return
+        print("Traceback (most recent call last):")
+        pass
     a = abs(number) % 10
     return (a)
