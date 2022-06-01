@@ -10,5 +10,5 @@ def pow(a, b):
         return(1)
     b -= 1
     if(check):
-        return round((a * pow(a, b)), 10)
+        return((a * pow(a, b)) * 1000)/1000
     return (a * pow(a, b))
