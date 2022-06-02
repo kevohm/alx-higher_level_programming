@@ -2,5 +2,5 @@
 if __name__ == "__main__":
     import sys
     length = len(sys.argv)
-    for i in range(0, length):
+    for i in range(1, length):
         printf("{}: {}". format(i, sys.argv[i]))
