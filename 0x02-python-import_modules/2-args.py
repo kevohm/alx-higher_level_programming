@@ -7,4 +7,4 @@ if __name__ == "__main__":
         for i in range(1, length):
             printf("{}: {}". format(i, sys.argv[i]))
     else:
-        print(".")
+        print("{} arguments.".format(length - 1))
