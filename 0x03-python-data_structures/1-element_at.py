@@ -5,4 +5,4 @@ if __name__ == "__main__":
         if idx < 0 or idx > length:
             return None
         else:
-            print("")
+            print("Element at index {} is {}".format(idx, my_list[idx]))
