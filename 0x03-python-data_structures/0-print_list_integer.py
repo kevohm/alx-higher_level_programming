@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-# print_list_integer
+# 0-print_list_integer.py
 
-    """ print elements in list """ 
+
 def print_list_integer(my_list=[]):
-    length = len(my_list)
-    for i in range(length):
-        print("{:d}".format(my_list[i])
+    """Print all int in lst."""
+    for j in range(len(my_list)):
+        print("{:d}".format(my_list[j]))
