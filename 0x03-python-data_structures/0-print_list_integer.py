@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#print_list_integer
+# print_list_integer
 
 if __name__ == "__main__":
     """ print elements in list """ 
