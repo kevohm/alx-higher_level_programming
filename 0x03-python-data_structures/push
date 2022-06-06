@@ -1,6 +1,14 @@
 #!/bin/bash
 printf "\n\n===== updating github =====\n\n"
+if [$ARGC -gt 1]
+then
 git add --all . && git commit -m "$1 $2"
 git push
-sleep(3)
+else
+echo "Enter msg: "
+read msg
+git add --all . && git commit -m "$msg"
+git push
+fi;
+sleep 2
 clear
