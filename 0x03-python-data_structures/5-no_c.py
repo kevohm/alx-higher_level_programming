@@ -2,7 +2,7 @@
 def no_c(my_string = "mychat"):
     s = ""
     for i in my_string:
-        if i == "c" and i == "c":
+        if i == "c" or i == "C":
             continue
         s += i
     return s
