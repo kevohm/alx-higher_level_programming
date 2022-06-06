@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# print_reversed_list_integer
+# 3-print_reversed_list_integer.py
+
+
 def print_reversed_list_integer(my_list=[]):
-    """ print reversed list """
+    """Print all int of a lst in reverse order."""
     return my_list[::-1]
