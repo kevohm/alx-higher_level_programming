@@ -9,5 +9,4 @@ def print_matrix_integer(matrix=[[]]):
                 print("{:d}".format(matrix[x][y]), end="")
                 if y != (len(matrix[x]) - 1):
                     print(" ", end="")
-
         print("")
