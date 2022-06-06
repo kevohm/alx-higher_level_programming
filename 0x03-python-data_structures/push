@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "\n\n===== updating github =====\n\n"
-
+printf "\n\n===== updating github =====\n\n"
 git add --all . && git commit -m "$1 $2"
 git push
+sleep(3)
 clear
