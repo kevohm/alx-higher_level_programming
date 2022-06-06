@@ -1,4 +1,6 @@
 #!/bin/bash
-echo "===== updating github ====="
-git add --all . && git commit -m "$1"
+echo "\n\n===== updating github =====\n\n"
+
+git add --all . && git commit -m "$1 $2"
 git push
+clear
