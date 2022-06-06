@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-# multiple_returns
+# 8-multiple_returns.py
+
 
 def multiple_returns(sentence):
-    """multiple_returns"""
-    length = len(sentence)
-    last = None
-    if (length > 0):
-        last = sentence[-1]
-    return (length, last)
+    """returns len of a str and first char."""
+    if sentence == "":
+        return (0, None)
+    return (len(sentence), sentence[0])
