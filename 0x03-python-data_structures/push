@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "Enter msg: "
-read msg
-git add --all . && git commit -m "$msg"
+echo "===== updating github ====="
+git add --all . && git commit -m "$1"
 git push
