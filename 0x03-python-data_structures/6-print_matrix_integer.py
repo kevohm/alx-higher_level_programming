@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-# print_matrix_integer
+# 6-print_matrix_integer.py
+
 
 def print_matrix_integer(matrix=[[]]):
-    """ print matrix """
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            print("{:d}".format(matrix[i][j]), end="")
-            if i != (len(matrix[i]) - 1):
-                print("", end=" ")
+    """Print matrix containing int"""
+    for x in range(len(matrix)):
+        for y in range(len(matrix[x])):
+                print("{:d}".format(matrix[x][y]), end="")
+                if y != (len(matrix[x]) - 1):
+                    print(" ", end="")
 
         print("")
