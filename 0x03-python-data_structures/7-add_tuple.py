@@ -1,18 +1,20 @@
 #!/usr/bin/python3
-# 7-add_tuple.py
-
-
 def add_tuple(tuple_a=(), tuple_b=()):
-    """adding 2 tuples."""
-    if len(tuple_a) < 2:
-        if len(tuple_a) == 0:
-            tuple_a = 0, 0
-        else:
-            tuple_a = tuple_a[0], 0
-    elif (len(tuple_b) < 2):
-        if (len(tuple_b) == 0):
-            tuple_b = 0, 0
-        else:
-            tuple_b = tuple_b[0], 0
-
-    return (tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])
+    try:
+        a1 = tuple_a[0]
+    except IndexError:
+        a1 = 0
+    try:
+        a2 = tuple_a[1]
+    except IndexError:
+        a2 = 0
+    try:
+        b1 = tuple_b[0]
+    except IndexError:
+        b1 = 0
+    try:
+        b2 = tuple_b[1]
+    except IndexError:
+        b2 = 0
+    tuple_c = (a1 + b1, a2 + b2)
+    return (tuple_c)
