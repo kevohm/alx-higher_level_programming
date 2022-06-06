@@ -1,6 +1,6 @@
 #!/bin/bash
 printf "\n\n===== updating github =====\n\n"
-if ["$#" -ne "0"];
+if ["0" -ne "0"];
 then
 	git add --all . && git commit -m "$1 $2"
 	git push
