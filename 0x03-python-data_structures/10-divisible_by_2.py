@@ -1,13 +1,15 @@
+
 #!/usr/bin/python3
 # 10-divisible_by_2.py
 
+
 def divisible_by_2(my_list=[]):
-    cpy = my_list
-    for i in range(len(my_list)):
-        if((my_list[i] % 2) == 0):
-            cpy[i] = True
+    """Find even"""
+    even = []
+    for j in range(len(my_list)):
+        if my_list[j] % 2 == 0:
+            even.append(True)
         else:
-            cpy[i] = False
-    return (cpy)
+            even.append(False)
 
-
+    return (even)
