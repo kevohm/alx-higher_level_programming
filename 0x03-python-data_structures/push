@@ -1,14 +1,15 @@
 #!/bin/bash
+ARGC = $#
 printf "\n\n===== updating github =====\n\n"
 if [$ARGC -gt 1]
 then
-git add --all . && git commit -m "$1 $2"
-git push
+	git add --all . && git commit -m "$1 $2"
+	git push
 else
-echo "Enter msg: "
-read msg
-git add --all . && git commit -m "$msg"
-git push
+	echo "Enter msg: "
+	read msg
+	git add --all . && git commit -m "$msg"
+	git push
 fi;
 sleep 2
 clear
