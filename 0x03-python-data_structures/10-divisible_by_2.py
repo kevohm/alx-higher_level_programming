@@ -2,7 +2,12 @@
 # 10-divisible_by_2.py
 
 def divisible_by_2(my_list=[]):
-    cpy = [i for i in my_list (i%2 == 0)?True:False]
+    cpy = my_list
+    for i in range(len(my_list)):
+        if(i%2 == 0):
+            cpy[i] = True
+        else:
+            cpy[i] = False
     return (cpy)
 
 
