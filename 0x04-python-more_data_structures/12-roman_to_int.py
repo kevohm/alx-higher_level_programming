@@ -4,8 +4,7 @@
 
 def roman_to_int(roman_string):
     """Convert roman numeral to int."""
-    if roman_string != str(roman_string) or
-            roman_string is None):
+    if (roman_string != str(roman_string)) or (roman_string is None):
         return (0)
 
     roman_dict = {
@@ -22,11 +21,10 @@ def roman_to_int(roman_string):
     for j in range(len(roman_string)):
         if roman_dict.get(roman_string[j], 0) == 0:
             return (0)
-
-        if (j != (len(roman_string) - 1) and
-                roman_dict[roman_string[j]] < roman_dict[roman_string[j + 1]]):
-                num += roman_dict[roman_string[j]] * -1
-
+        a = roman_dict[roman_string[j]]
+        b = roman_dict[roman_string[j + 1]]
+        if (j != (len(roman_string) - 1)) and (a < b):
+            num += a * -1
         else:
-            num += roman_dict[roman_string[j]]
+            num += a
     return (num)
