@@ -7,6 +7,3 @@
 class Square:
     """Empty"""
     pass
-© 2022 GitHub, Inc.
-Terms
-Pr
