@@ -13,7 +13,7 @@ class Square:
             size (int): size
         """
         if size != int(size):
-            raise TypeError("Not a int");
-        else if(size < 0):
-            raise ValueError("Value is invalid");
+            raise TypeError("Not a int")
+        if size < 0:
+            raise ValueError("Value is invalid")
         self.size = size
