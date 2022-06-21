@@ -35,7 +35,7 @@ class Square:
 
     @position.setter
     def pos(self, val):
-        if val != tuple(val) or
+        if (val != tuple(val) or
                 len(val) != 2 or
                 not all(isinstance(num, int) for num in val) or
                 not all(num >= 0 for num in val)):
