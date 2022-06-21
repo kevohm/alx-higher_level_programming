@@ -25,6 +25,7 @@ class Square:
     def size(self):
         """ Get and set """
         return self.__size
+
     @size.setter
     def size(self, value):
         if value != int(value):
