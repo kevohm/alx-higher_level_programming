@@ -2,6 +2,6 @@
 
 # 0-square.py
 
-if __name__ == "__main__":
-    class Square:
-        """ this is a square"""
+class Square:
+    """ this is a square"""
+    pass
