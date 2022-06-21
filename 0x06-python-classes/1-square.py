@@ -16,4 +16,4 @@ class Square:
             raise TypeError("Not a int")
         if size < 0:
             raise ValueError("Value is invalid")
-        self.size = size
+        self.__size = size
