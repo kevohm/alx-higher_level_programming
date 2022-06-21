@@ -37,3 +37,10 @@ class Square:
     def area(self):
         """ area of square """
         return pow(self.__size, 2)
+
+    def my_print(self):
+        """ print to stdout """
+        if self.__size == 0:
+            print("")
+        else:
+            print("#")
