@@ -47,7 +47,11 @@ class Square:
         Args:
             value (tuple): tuple
         """
-        if type(value) is not tuple or len(value) != 2 or not all(isinstance(num, int) for num in value) or all(num >= 0 for num in value):
+        checkType = type(value) is not tuple
+        checkSize = all(num >= 0 for num in value)
+        checkNot = not all(isinstance(num, int) for num in value)
+        checkLen = len(value) != 2
+        if (checkType or checkLen or checkNot or checkSize):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
