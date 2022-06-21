@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 # 2-square.py
 
-"""class of square"""
+"""Square."""
 
 
 class Square:
-    """class of square"""
+    """Rep square."""
 
     def __init__(self, size=0):
         """
@@ -13,7 +13,7 @@ class Square:
             size (int): size
         """
         if size != int(size):
-            raise TypeError("Not a int")
-        if size < 0:
-            raise ValueError("Value is invalid")
+            raise TypeError("size must be of integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
         self.size = size
