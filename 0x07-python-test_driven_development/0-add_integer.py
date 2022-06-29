@@ -1,19 +1,18 @@
 #!/usr/bin/python3
-# 0-add_integer.py
-
-"""add_integer module
-
-This module add two integers and rounds float
-
+""" Add Integer Module
+This module adds two integers and rounds floats, checking types as well.
 """
 
 
 def add_integer(a, b=98):
-    ''' add_integer function
-    Return: result of  a plus b
-    '''
-    if not isinstance(a, (int, float)):
-        raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
-        raise TypeError("b must be an integer")
-    return int(round(a)) + int(round(b))
+    """add_integer function to add a and b
+    Return: Result of a and b addition
+    """
+    try:
+        sum = a + b
+        return int(round(a)) + int(round(b))
+    except TypeError:
+        if isinstance(a, int):
+            raise TypeError('b must be an integer')
+        elif isinstance(b, int):
+            raise TypeError('a must be an integer')
