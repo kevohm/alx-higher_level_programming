@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-if [ -f "$1" ]
-then
-	cat $1 | mysql -hlocalhost -uroot -p
-else
-	echo "usage: ./run_script < .sql file >"
-fi
