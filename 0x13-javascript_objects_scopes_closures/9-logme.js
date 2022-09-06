@@ -1,6 +1,6 @@
 #!/usr/bin/node
+let counter = 0;
 const logMe = function (item) {
-  let counter = 0;
   function print (item) {
     const ans = counter + ': ' + item;
     console.log(ans);
