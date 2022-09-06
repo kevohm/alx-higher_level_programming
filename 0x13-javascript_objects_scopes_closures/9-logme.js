@@ -4,7 +4,7 @@ const logMe = function (item) {
   function print (item) {
     const ans = counter + ': ' + item;
     console.log(ans);
-    return counter += 1;
+    counter += 1;
   }
   return print(item);
 };
