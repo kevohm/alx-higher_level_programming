@@ -15,6 +15,8 @@ if __name__ == "__main__":
         if len(J_d.keys()) == 0:
             print("No result")
         else:
-            print('[{}] {}'.format(j_d['id'], j_d['name']))
+            id = j_d.get('id')
+            name = j_d.get('name')
+            print('[{}] {}'.format(id, name))
     except ValueError:
         print("Not a valid JSON")
