@@ -1,22 +1,22 @@
 #!/usr/bin/python3
-"""checks if response json"""
+"""POST request returning JSON info"""
 import requests
-import sys
+from sys import argv
 
 if __name__ == "__main__":
     try:
-        if len(sys.argv) > 1:
-            p = sys.argv[1]
+        if len(argv) > 1:
+            q = argv[1]
         else:
-            p = ""
-        url = "http://0.0.0.0:5000/search_user"
-        data = requests.post(url, data={"q": p})
-        j_d = data.json()
-        if len(J_d.keys()) == 0:
+            q = ""
+        url = 'http://0.0.0.0:5000/search_user'
+        response = requests.post(url, data={'q': q})
+        responseDict = response.json()
+        if len(responseDict.keys()) == 0:
             print("No result")
         else:
-            id = j_d.get('id')
-            name = j_d.get('name')
-            print('[{}] {}'.format(id, name))
+            id = responseDict.get('id')
+            name = responseDict.get('name')
+            print("[{}] {}".format(id, name))
     except ValueError:
         print("Not a valid JSON")
