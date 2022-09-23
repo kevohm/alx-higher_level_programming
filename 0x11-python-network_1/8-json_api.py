@@ -3,10 +3,11 @@
 import requests
 import sys
 
-p = ""
-if len(sys.argv) == 2:
-    p = sys.argv[1]
-else:
+if __name__ == "__main__": 
+    if len(sys.argv) == 2:
+        p = sys.argv[1]
+    else:
+        p = ""
     data = requests.post("http://0.0.0.0:5000/search_user", data={"q": p})
     try:
         j_d = data.json()
