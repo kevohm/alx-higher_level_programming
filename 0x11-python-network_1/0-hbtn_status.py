@@ -8,4 +8,4 @@ if __name__ == '__main__':
         print("Body response:")
         page = response.read()
         data = '\t- type: {}\n\t- content: {}\n\t- utf8 content: {}'
-        print(data.format(page, type(page), page.decode('UTF-8')))
+        print(data.format(type(page), page,  page.decode('UTF-8')))
