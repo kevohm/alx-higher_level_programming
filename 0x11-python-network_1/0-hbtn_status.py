@@ -3,8 +3,10 @@
 from urllib import request
 
 url = 'https://alx-intranet.hbtn.io/status'
-response = request.urlopen(url)
-page = response.read()
-t_data = type(page)
-decoded = page.decode("UTF-8")
-print("Body response:\n\t- type: {}\n\t- content: {}\n\t- utf8 content: {}".format(page, t_data, decoded))
+with request.urlopen(url) as response:
+    page = response.read()
+    t_data = type(page)
+    decoded = page.decode("UTF-8")
+    data = 'Body response: \n\t - type:
+        {}\n\t - content: {}\n\t - utf8 content: {}'
+    print(data.format(page, t_data, decoded))
