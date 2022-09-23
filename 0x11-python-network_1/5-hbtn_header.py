@@ -4,6 +4,5 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        data = requests.get(sys.argv[1])
-        print(data.headers["X-Request-Id"])
+    data = requests.get(sys.argv[1])
+    print(data.headers.get("X-Request-Id"))
