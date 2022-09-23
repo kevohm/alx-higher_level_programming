@@ -7,10 +7,10 @@ if len(sys.argv) == 2:
     p = sys.argv[1]
 data = requests.post("http://0.0.0.0:5000/search_user", params={"q": p})
 try:
-    if data.statuc_code == 204:
+    j_d = data.json()
+    if len(J_d.keys()) == 0:
         print("No result")
     else:
-        j_d = data.json()
-        print('[{}] {}'.format(j_d.id, j_d.name))
+        print('[{}] {}'.format(j_d['id'], j_d['name']))
 except requests.exceptions.JSONDecodeError as e:
     print("Not a valid JSON")
