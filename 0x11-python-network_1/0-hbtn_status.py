@@ -2,8 +2,8 @@
 # code to fetch data
 from urllib import request
 
-url = 'https://alx-intranet.hbtn.io/status'
 if __name__ == '__main__':
+    url = 'https://alx-intranet.hbtn.io/status'
     with request.urlopen(url) as response:
         print("Body response:")
         page = response.read()
