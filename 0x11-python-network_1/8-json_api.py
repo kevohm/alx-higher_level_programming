@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-""""""
+"""checks if response json"""
 import requests
 import sys
 p = ""
 if len(sys.argv) == 2:
     p = sys.argv[1]
 data = requests.post("http://0.0.0.0:5000/search_user", params={"q": p})
-print(data.text)
+try:
+    if data.statuc_code == 204:
+        print("No result")
+    else:
+        j_d = data.json()
+        print('[{}] {}'.format(j_d.id, j_d.name))
+except requests.exceptions.JSONDecodeError as e:
+    print("Not a valid JSON")
