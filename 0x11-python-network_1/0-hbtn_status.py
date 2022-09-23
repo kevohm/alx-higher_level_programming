@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# code to fetch data
+""" code to fetch data """
 from urllib import request
 
 if __name__ == '__main__':
