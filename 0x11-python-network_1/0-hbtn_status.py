@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# code to fetch data
 from urllib import request
 
 url = 'https://alx-intranet.hbtn.io/status'
