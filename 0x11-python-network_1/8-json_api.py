@@ -3,13 +3,14 @@
 import requests
 import sys
 
-if __name__ == "__main__": 
-    if len(sys.argv) == 2:
-        p = sys.argv[1]
-    else:
-        p = ""
-    data = requests.post("http://0.0.0.0:5000/search_user", data={"q": p})
+if __name__ == "__main__":
     try:
+        if len(sys.argv) == 2:
+            p = sys.argv[1]
+        else:
+            p = ""
+        url = "http://0.0.0.0:5000/search_user"
+        data = requests.post(url, data={"q": p})
         j_d = data.json()
         if len(J_d.keys()) == 0:
             print("No result")
