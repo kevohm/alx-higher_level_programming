@@ -10,4 +10,4 @@ if __name__ == "__main__":
             data.raise_for_status()
         print(data.text)
     except requests.exceptions.HTTPError as e:
-        print(e)
+        print("Error code: {}".format(e.code))
