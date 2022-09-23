@@ -4,11 +4,8 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    urlSearch = "https://swapi.co/api/people/?search={}".format(argv[1])
-    response = requests.get(urlSearch)
+    url = "https://api.github.com/user"
+    response = requests.get(url, auth=(argv[1], argv[2]))
     responseDict = response.json()
-    resCount = responseDict.get('count')
-    resResults = responseDict.get('results')
-    print("Number of results: {}".format(resCount))
-    for d in resResults:
-        print("{}".format(d.get("name")))
+    resCount = responseDict.get('id')
+    print(resCount)
