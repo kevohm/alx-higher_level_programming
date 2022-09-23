@@ -12,5 +12,5 @@ try:
         print("No result")
     else:
         print('[{}] {}'.format(j_d['id'], j_d['name']))
-except requests.exceptions.JSONDecodeError as e:
+except ValueError:
     print("Not a valid JSON")
